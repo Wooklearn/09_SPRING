@@ -1,4 +1,4 @@
-package com.ohgiraffers.section02.annotation.subsection01.primary;
+package com.ohgiraffers.section02.annotation.subsection02.qualifier;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -16,7 +16,7 @@ public class Application {
         }
 
         AnimalService animalService =
-                context.getBean("primaryService", AnimalService.class);
+                context.getBean("qualifierService", AnimalService.class);
 
         animalService.animalEat();
 
